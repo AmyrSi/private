@@ -1,0 +1,731 @@
+/* ========================================
+   JAMASP AI WEBSITE STYLES
+   ======================================== */
+
+/* ========================================
+   BACKGROUND COLORS - CHANGE THESE EASILY
+   ======================================== */
+
+/* Main page background */
+html, body {
+  background: #000000; /* Change this for overall page background */
+  color: #e5e7eb;
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ========================================
+   NAVBAR BACKGROUND - CHANGE HERE
+   ======================================== */
+header, .navbar {
+  background: #000000; /* 🔴 CHANGE THIS: Navbar background color */
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.10);
+  border-bottom: none;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 0;
+}
+
+.modern-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px !important;
+  height: 64px !important;
+  padding: 0.75rem 1.5rem !important;
+  width: 100% !important;
+  max-width: 98vw !important;
+  margin: 0.5rem auto !important;
+  box-sizing: border-box;
+  border-radius: 1.5rem !important;
+}
+
+.modern-navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modern-navbar-logo img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: #18181b;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.12);
+}
+
+.modern-navbar-logo span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  letter-spacing: 0.01em;
+}
+
+.modern-navbar-links {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.modern-navbar-links a {
+  color: #e5e7eb;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s, background 0.2s;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+}
+
+.modern-navbar-links a:hover {
+  color: #6366f1;
+  background: #23272f;
+}
+
+.modern-navbar-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.modern-navbar-cta-btn {
+  background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.18);
+  transition: background 0.2s;
+  text-decoration: none;
+  outline: none;
+}
+
+.modern-navbar-cta-btn:hover {
+  background: linear-gradient(90deg, #9333ea 0%, #2563eb 100%);
+}
+
+/* ========================================
+   HERO SECTION BACKGROUND - CHANGE HERE
+   ======================================== */
+.hero-section {
+  background: #000000; /* 🔴 CHANGE THIS: Hero section background color */
+  padding: 5rem 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: none;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #f1f1f1;
+  line-height: 1.1;
+}
+
+.hero-sub {
+  font-size: 1.2rem;
+  color: #b3b3b3;
+  margin-bottom: 2rem;
+}
+
+.hero-form {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  background: #18181b;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.18);
+  border: 1px solid #23272f;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-form input[type="email"] {
+  border: none;
+  outline: none;
+  background: transparent;
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #f1f1f1;
+  border-radius: 999px 0 0 999px;
+  caret-color: #6366f1;
+}
+
+.hero-form input[type="email"]::placeholder {
+  color: #b3b3b3;
+}
+
+.hero-form button {
+  background: #23272f;
+  color: #f1f1f1;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.hero-form button:hover {
+  background: #6366f1;
+  color: #fff;
+}
+
+.hero-benefits {
+  color: #b3b3b3;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 220px;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(31, 38, 135, 0.18);
+  background: #23272f;
+  border: 1px solid #23272f;
+}
+
+/* ========================================
+   WAVY SECTION SEPARATORS
+   ======================================== */
+.section-separator {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1px;
+  z-index: 1;
+}
+
+.section-separator svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+/* ========================================
+   FEATURES SECTION BACKGROUND - CHANGE HERE
+   ======================================== */
+.features-section {
+  background: #000000; /* 🔴 CHANGE THIS: Features section background color */
+  padding: 4rem 0 4rem 0;
+  border-bottom: none;
+}
+
+.features-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin-bottom: 2.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #23272f;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.13);
+  border: 1px solid #23272f;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 220px;
+  transition: box-shadow 0.2s;
+}
+
+.feature-card:hover {
+  box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.23);
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: #18181b;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
+.feature-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  margin-bottom: 0.5rem;
+}
+
+.feature-desc {
+  color: #b3b3b3;
+  font-size: 1rem;
+}
+
+/* ========================================
+   PROJECTS/CARDS SECTION BACKGROUND - CHANGE HERE
+   ======================================== */
+.projects-section {
+  background: #000000; /* 🔴 CHANGE THIS: Projects section background color */
+  padding: 4rem 0;
+}
+
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 1rem;
+  margin: 3rem auto 0 auto;
+}
+
+.card {
+  background: #18181b;
+  border-radius: 1.25rem;
+  box-shadow: 0 2px 12px 0 rgba(31, 38, 135, 0.13);
+  border: 1px solid #23272f;
+  width: 320px;
+  min-height: 420px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 6px 24px 0 rgba(31, 38, 135, 0.23);
+}
+
+.card-image {
+  width: 100%;
+  min-width: 0;
+  max-width: 100vw;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.frosted {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f1f1f1;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-link-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.18);
+  transition: background 0.2s;
+  width: fit-content;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.card-link-btn:hover {
+  background: linear-gradient(90deg, #9333ea 0%, #2563eb 100%);
+}
+
+/* ========================================
+   CONTACT SECTION BACKGROUND - CHANGE HERE
+   ======================================== */
+#contact {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #000000; /* 🔴 CHANGE THIS: Contact section background color */
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+  background: #23272f;
+  color: #f1f1f1;
+  border: 1px solid #23272f;
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.13);
+}
+
+#contactForm input[type="text"]::placeholder,
+#contactForm input[type="email"]::placeholder,
+#contactForm textarea::placeholder {
+  color: #b3b3b3;
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm input[type="email"]:focus,
+#contactForm textarea:focus {
+  border: 1.5px solid #6366f1;
+  background: #23272f;
+  color: #f1f1f1;
+}
+
+#contactForm button[type="submit"] {
+  background: linear-gradient(90deg, #2563eb 0%, #9333ea 100%);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(31, 38, 135, 0.18);
+  transition: background 0.2s;
+}
+
+#contactForm button[type="submit"]:hover {
+  background: linear-gradient(90deg, #9333ea 0%, #2563eb 100%);
+}
+
+/* ========================================
+   FOOTER BACKGROUND - CHANGE HERE
+   ======================================== */
+footer {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #000000 !important; /* 🔴 CHANGE THIS: Footer background color */
+  color: #e5e7eb;
+}
+
+footer a {
+  color: #b3b3b3;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .hero-image {
+    margin-top: 2rem;
+  }
+  .cards-container {
+    gap: 1.5rem;
+  }
+  .card {
+    width: 100vw;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .modern-navbar-links {
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .features-title {
+    font-size: 1.5rem;
+  }
+  .feature-card {
+    padding: 1.25rem 1rem 1rem 1rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .card {
+    width: 100vw;
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 700px) {
+  .modern-navbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    padding: 0.5rem 0.5rem;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .modern-navbar-links {
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    width: 100vw;
+    max-width: 100vw;
+  }
+  .modern-navbar-cta {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    padding: 1.5rem 0 1rem 0;
+  }
+  .features-section {
+    padding: 1rem 0 1rem 0;
+  }
+}
+
+/* ========================================
+   MOBILE MENU STYLES
+   ======================================== */
+@media (max-width: 1023px) {
+  #navbar-menu {
+    left: 0;
+    right: 0;
+    top: 100%;
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.10);
+    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    margin-top: 0.25rem;
+    background: #18181b;
+    min-width: 0;
+    width: 100vw;
+    max-width: 100vw;
+    z-index: 40;
+    display: none;
+  }
+  #navbar-menu.flex {
+    display: flex !important;
+  }
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(-16px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-down {
+  animation: slide-down 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ========================================
+   COLOR GUIDE - COMMON COLORS TO USE
+   ======================================== */
+/*
+🔴 BLACK COLORS:
+- #000000 = Pure black
+- #111 = Very dark gray
+- #18181b = Dark gray
+- #23272f = Medium dark gray
+
+🔵 BLUE COLORS:
+- #0B192C = Dark blue
+- #2563eb = Bright blue
+- #6366f1 = Purple-blue
+
+🟣 PURPLE COLORS:
+- #9333ea = Purple
+- #6366f1 = Purple-blue
+
+⚪ WHITE/GRAY COLORS:
+- #f1f1f1 = Light white
+- #e5e7eb = Light gray
+- #b3b3b3 = Medium gray
+- #ffffff = Pure white
+*/ 
+
+.section-separator {
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -1px;
+}
+
+.section-separator svg {
+  display: block;
+  width: 100%;
+  height: 120px;
+}
+
+@keyframes moveGradient {
+  0% {
+    stop-color: #0ea5e9;
+  }
+  50% {
+    stop-color: #8b5cf6;
+  }
+  100% {
+    stop-color: #ec4899;
+  }
+}
+
+#animatedGradient stop {
+  animation: moveGradient 6s linear infinite alternate;
+}
+
+svg {
+  filter: drop-shadow(0 0 10px #9333ea);
+}
+
+
+.section-separator.minimal-chatbot {
+  width: 100%;
+  overflow: hidden;
+  background-color: #121212;
+  padding: 1rem 0;
+}
+
+.section-separator.minimal-chatbot svg {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+body.dark-mode {
+  background: #000 !important;
+  color: #f1f1f1 !important;
+}
+body.dark-mode .features-section,
+body.dark-mode .projects-section {
+  background: #000 !important;
+  color: #f1f1f1 !important;
+}
+body.dark-mode .features-section .p-6,
+body.dark-mode .features-section .card,
+body.dark-mode .features-section .bg-white,
+body.dark-mode .projects-section .card,
+body.dark-mode .projects-section .bg-white {
+  background: #111 !important;
+  color: #f1f1f1 !important;
+  border-color: #222 !important;
+}
+body.dark-mode .features-section .text-gray-900,
+body.dark-mode .features-section .text-gray-800,
+body.dark-mode .features-section .text-gray-700,
+body.dark-mode .projects-section .text-gray-900,
+body.dark-mode .projects-section .text-gray-800,
+body.dark-mode .projects-section .text-gray-700 {
+  color: #f1f1f1 !important;
+}
+body.dark-mode .section-separator path[fill="#fff"] {
+  fill: #000 !important;
+}
+body.dark-mode .hero-section h4 {
+  color: #fff !important;
+}
+body.dark-mode .features-section .bg-gray-100 {
+  background: #23272f !important;
+}
+body.dark-mode #contact,
+body.dark-mode #contact * {
+  color: #fff !important;
+}
+body.dark-mode footer,
+body.dark-mode footer * {
+  color: #fff !important;
+}
