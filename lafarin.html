@@ -1,0 +1,255 @@
+<html><head><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no, user-scalable=no"><meta name="description" content=""><meta name="robots" content="index,follow"><meta property="og:locale" content="fa_IR"><meta property="og:type" content="website"><meta property="og:site_name" content="کیو آر منوساز"><meta property="og:title" content="LAFARINE"><meta property="og:description" content=""><meta property="og:url" content="https"><meta property="og:image" content=""><meta name="twitter:title" content="LAFARINE"><meta name="twitter:description" content=""><meta name="twitter:image" content=""><meta name="twitter:site" content="@vixaweb"><meta name="twitter:creator" content="@vixaweb"><title>LAFARINE</title><link rel="icon" href="https://qrmenusaz.com/Temp/icon.png" type="image/png">        <script src="https://lafarinee.qrmenusaz.com/Js/jquery.js?ver78" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://lafarinee.qrmenusaz.com/Css/main.css?ver78" type="text/css">
+        <link rel="stylesheet" href="https://lafarinee.qrmenusaz.com/Css/menu6.css?ver78" type="text/css">
+        <script src="https://lafarinee.qrmenusaz.com/Js/main.js?ver78" type="text/javascript"></script>
+        <script src="https://lafarinee.qrmenusaz.com/Js/menu6.js?ver78" type="text/javascript"></script>
+
+                
+        <style>
+            body { background-color:#E3B586; }
+            #m6_menu { background-color:#E3B586; }
+            .m6_main_cat { background-color:#E3B586; }
+            .m6_cat_checked { background-color:#E3B586; }
+            .m6_main_cat { color:#FFFFFF; }
+            .m6_cat { color:#FFFFFF; }
+            #rest_info > * i { background-color:#E3B586; }
+            .m6_food > div:nth-child(2) span { background-color:#E3B586;color:#FFFFFF; }
+            #note_button { background-color:#E3B586;color:#FFFFFF; }
+            #reserve_button > * { background-color:#E3B586;color:#FFFFFF; }
+            #option_add_note { background-color:#E3B586;color:#FFFFFF; }
+        </style>
+    	<style>.m6_cat {font-size: 8pt;line-height: 17px;}
+.m6_main_cat{width:46%; float:left;padding: 0% 0% 0% 0%;margin: -8% -12% 2% 5%;max-width: 139px;display: contents;}
+#m6_main_menu > div{padding:10px 0px 30px;}
+.m6_main_cat img{height: 135px;margin-left: 0px;padding: 23px 0px 10px 0px;}
+.m6_main_cat>span{display:none;}
+.m6_main_cat{text-align:center;}
+.m6_main_cat{background:none;}
+#t6_logo img{width:70%;padding:30px 0px 40px 0px;}
+#m6_menu{background-color:#000000;}
+.m6_cat_checked{background-color:#ffffff;}
+.m6_food > div:nth-child(1) > div:nth-child(2) > div:nth-child(1){font-family: tahoma;}
+.m6_food{border-bottom: groove; border-bottom-color:#000000;}
+.food_label{background-color:#e3b586;color:#000000;}
+.m6_cat_checked{background-color:#e3b586;}
+#m6_main_menu > div{padding: 0px 0px;}
+.m6_food > div:nth-child(1){    background-color: #000000; color: #ffffff;}
+.mag_contacts_row img{height:107px;margin-left:0px;}
+.m6_food > div:nth-child(2) {padding: 0px 10px 5px;background-color: #000000; color: #000000}
+.m6_food > div:nth-child(2) span {background-color: #222222;color: #ffffff;}
+.m6_food > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {font-family: black,tahoma;color:#e3b586;font-size:16px}
+#rest_info {margin: 55px auto 40px;width: 80%;max-width: 350px;text-align: center;}
+#rest_info > span i {width: 45px;height: 45px;}</style>
+                <script src="https://lafarinee.qrmenusaz.com/Js/order.js?ver78" type="text/javascript"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="">
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+            </head>
+    <body onresize="update_graphic()">
+                <script>var note_button_name = 'افزودن به یادداشت';</script>
+        <script> var back_name = 'بازگشت'; </script>
+                            <div id="cover" style="background-image:url('https://lafarinee.qrmenusaz.com/Media/bm_1012_1657121788.jpg"></div>
+                
+        <div id="m6_main_menu">
+            <div>
+                <div id="t6_logo"><img src="https://lafarinee.qrmenusaz.com/Media/img_1012_1657121788.png"></div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7560)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119820.png">                        <span>Restaurant</span>
+                    </div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7559)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119806.png">                        <span>Cafe </span>
+                    </div>
+                                    <div class="m6_main_cat" onclick="show_t6_category(7558)">
+                        <img src=" https://lafarinee.qrmenusaz.com/Media/ico_1012_1657119791.png">                        <span>Pastry</span>
+                    </div>
+                
+                
+                
+
+
+
+
+
+
+
+                              
+                            
+                
+              
+              
+              
+              
+                
+
+                
+                
+                
+              
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+                <div id="rest_info">
+                                            <span id="rest_phone"><i onclick="view_menu_contact(this,'&lt;a href=\'tel:09173037200\'&gt;09173037200&lt;/a&gt;')"></i></span>
+                                                                <span id="rest_address"><i onclick="view_menu_contact(this,'&lt;a href=\'https://goo.gl/maps/5ahkznNS1j9rJ9aq8\'&gt;شیراز، انتهای بلوار نیایش  &lt;/a&gt;')"></i></span>
+                                                                <span id="rest_insta"><i onclick="view_menu_contact(this,'&lt;a target=\'_blank\' href=\'https://instagram.com/lafarine.lounge\'&gt;lafarine.lounge&lt;/a&gt;')"></i></span>
+                                        <div id="rest_result"><span></span></div>
+                </div>
+                <script>
+                    function view_menu_contact(ele,html) {
+                        var page_h = $('#m6_main_menu').outerHeight();
+                        $('#m6_main_menu').animate({scrollTop:page_h});
+                        $("#rest_info > span").removeClass("selected_rest");
+                        $(ele).parents("span").addClass("selected_rest");
+                        $("#rest_result > span").html(html);
+                        $("#rest_result").slideDown(200);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div id="m6_menu"><div></div></div>
+        <div id="m6_food_holder"><div></div></div>
+        <div id="t1_detail" class="tbl">
+            <div>
+                <div id="detail_window">
+                    <div class="tbl"><div></div><div><img src="https://lafarinee.qrmenusaz.com/Temp/close_black.png" onclick="close_t1_detail()"></div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="t1_options" class="tbl">
+            <div>
+                <div id="option_window">
+                    <div class="tbl"><div>افزودن غذا به یادداشت</div><div><img src="https://lafarinee.qrmenusaz.com/Temp/close_black.png" onclick="close_t1_option()"></div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+                    <div id="note_button" onclick="show_notes()">مشاهده دفترچه یادداشت<span class="notes_number"></span></div>
+            <div id="note_window">
+                <div id="note_items">
+                    <div class="tbl"><div>دفترچه یادداشت</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div></div>
+                    <div>
+                        <span onclick="get_menu_screen()">اسکرین شات</span>
+                                                                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order1()"></i>ثبت سفارش</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                                                                            <div class="order_mode" onclick="order3()"><img src="https://lafarinee.qrmenusaz.com/Temp/order_mode_1.png"><div>دریافت سفارش در رستوران</div></div>
+                                                                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order2()"></i>تحویل حضوری</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                        <div class="order_forms">
+                            <div class="order_form"><label>نام و نام خانوادگی</label><input id="or1-name" type="text"></div>
+                            <div class="order_form"><label>شماره موبایل</label><input id="or1-mobile" type="text"></div>
+                            <div class="order_form"><label>شماره میز (اختیاری)</label><input id="or1-desk" type="text"></div>
+                            <div class="order_form"><label>نحوه دریافت</label>
+                                <select id="or1-type">
+                                    <option value=""></option>
+                                    <option value="pack">بسته بندی شود</option>
+                                    <option value="non-pack">داخل رستوران میل می شود</option>
+                                </select>
+                            </div>
+                            <div class="order_form">
+                                <label>توضیحات اختیاری</label>
+                                <textarea id="or1-comment"></textarea>
+                            </div>
+                            <div id="order_factor1">
+                                <div><span>هزینه سفارشات</span><span></span></div>
+                                <div><span>مالیات</span><span></span></div>
+                                <div><span>مبلغ قابل پرداخت</span><span></span></div>
+                            </div>
+                            <div class="order_payment" id="or1-payment">
+                                                                    <label><input type="radio" checked="checked" name="pay1" value="cash">پرداخت حضوری و نقدی</label>                                                            </div>
+                            <div class="order_form_button"><span onclick="save_order1(1012)">تایید</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="">
+                    <div class="tbl"><div><i onclick="order2()"></i>ارسال پیک</div><div><i onclick="hide_notes()"></i></div></div>
+                    <div>
+                        <script>var tax_percent = 0;</script>
+                        <div class="order_forms">
+                            <div class="order_form"><label>نام و نام خانوادگی</label><input id="or2-name" type="text"></div>
+                            <div class="order_form"><label>شماره موبایل</label><input id="or2-mobile" type="text"></div>
+                            <div class="order_form">
+                                <label>توضیحات اختیاری</label>
+                                <textarea id="or2-comment"></textarea>
+                            </div>
+                            <div class="order_form"><label>آدرس کامل پستی</label><input type="text" id="or2-address"></div>
+                            <div class="order_map">
+                                <label>موقعیت روی نقشه</label>
+                                <div id="map"><div id="mapid"></div><i></i></div>
+                                <script>
+                                                                        var selected_location = {
+                                        lat:24.206889622398023,
+                                        lng:26.367187500000004                                    }
+                                    $(document).ready(function() {
+
+                                    });
+                                </script>
+                            </div>
+                            <div id="order_factor2">
+                                <div><span>هزینه سفارشات</span><span></span></div>
+                                <div><span>هزینه ارسال</span><span></span></div>
+                                <div><span>مالیات</span><span></span></div>
+                                <div><span>مبلغ قابل پرداخت</span><span></span></div>
+                            </div>
+                            <div class="order_payment" id="or2-payment">
+                                                                                                                                                                                    <label><input type="radio" checked="checked" name="pay2" value="cash">پرداختی حضوری و نقدی</label>
+                                                                                                </div>
+                                                            <div class="order_form_button" id="delivery_button">
+                                    <span onclick="save_order2(1012)">تایید</span>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div id="loading" class="tbl"><div><i></i></div></div>
+<script>
+	var main_path = 'https://lafarinee.qrmenusaz.com/';
+	var message = '';
+	var message_mode = 0;
+	$(document).ready(function() {
+		if(message!='') {
+			show_message(message_mode,message);
+		}
+	});
+	</script>
+<div id="message_bar" class="">
+	<div onclick="hide_message()"><i></i><span></span></div>
+</div>
+
+
+<div id="window_over_back">
+	<div class="tbl">
+		<div>
+
+			
+		</div>
+	</div>
+</div>
+    
+
+</body></html>
